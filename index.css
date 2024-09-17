@@ -1,12 +1,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background */
+    background-image: url('https://i.pinimg.com/originals/ab/88/80/ab8880cdb8add65fa298a6cb458a805c.jpg'); /* Set your background image */
     color: #ffffff; /* Light text color */
 }
-
+  
 .navbar {
     background-color: #1f1f1f; /* Slightly lighter dark for the navbar */
+    
     padding: 10px;
     display: flex;
     justify-content: center; /* Center the taskbar content */
@@ -49,5 +50,7 @@ body {
 
 .content {
     padding: 20px;
-    text-align: center; /* Center the text in the content area */
+    text-align: center; /* Center text in the content area */
+    position: relative; /* Position relative to stack above blurred background */
+    z-index: 1; /* Ensure content is above the blurred background */
 }
